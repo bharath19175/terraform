@@ -3,7 +3,7 @@ resource "aws_instance" "output" {
   ami = var.AMIS[var.AWS_REGION]
 
   provisioner "local-exec" {
-    command = "echo ${aws_instance.output.public_ip} >> public_ips.txt"   
+    command = "echo ${aws_instance.output.private_ip} >> private_ips.txt"   
   }
 }
 output "public_ip" {
