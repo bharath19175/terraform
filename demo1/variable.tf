@@ -10,5 +10,5 @@ variable "mymap" {
 }
 variable "mylist" {
   type    = list(any)
-  default = [1, 2, 3]
+  default = [1, 2, 3, 4]
 }
